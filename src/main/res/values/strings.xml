@@ -884,10 +884,11 @@
     <string name="copy_internal_link">Copy internal link</string>
     <string name="copy_internal_link_subline">Only works for users with access to this folder</string>
     <string name="failed_to_download">Failed to pass file to download manager</string>
-
+    <string name="autoupload_disable_power_save_check">Disable power save check</string>
+    <string name="power_check_dialog_title">Disable power save check</string>
+    <string name="power_save_check_dialog_message">Disabling power save check might result in uploading files when in low battery state!</string>
     <string name="etm_title">Engineering Test Mode</string>
     <string name="etm_preferences">Preferences</string>
-
     <string name="error_report_issue_text">Report issue to tracker? (requires a Github account)</string>
     <string name="error_report_issue_action">Report</string>
     <string name="error_crash_title">%1$s crashed</string>
