@@ -205,7 +205,6 @@ public class MainApp extends MultiDexApplication implements HasAndroidInjector {
                                                                         defaultPlatformHandler);
             Thread.setDefaultUncaughtExceptionHandler(crashReporter);
         }
-
         initGlobalContext(this);
         DaggerAppComponent.builder()
             .application(this)
