@@ -129,7 +129,7 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     private List<ThumbnailsCacheManager.ThumbnailGenerationTask> asyncTasks = new ArrayList<>();
     private boolean onlyOnDevice;
-    private boolean showShareAvatar;
+    private boolean showShareAvatar = false;
     @Setter private OCFile highlightedItem;
 
     public OCFileListAdapter(
@@ -142,7 +142,6 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         boolean argHideItemOptions,
         boolean gridView
     ) {
-
         this.ocFileListFragmentInterface = ocFileListFragmentInterface;
         mContext = context;
         this.preferences = preferences;
@@ -160,12 +159,10 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             AccountManager platformAccountManager = AccountManager.get(mContext);
             userId = platformAccountManager.getUserData(account,
                                                 com.owncloud.android.lib.common.accounts.AccountUtils.Constants.KEY_USER_ID);
+            showShareAvatar = mStorageManager.getCapability(account.name).getVersion().isShareesOnDavSupported();
         } else {
             userId = "";
         }
-
-        // TODO change when https://github.com/nextcloud/server/pull/14429 is merged
-        showShareAvatar = false;
 
         // initialise thumbnails cache on background thread
         new ThumbnailsCacheManager.InitDiskCacheTask().execute();
