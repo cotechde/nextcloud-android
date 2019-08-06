@@ -63,6 +63,7 @@ import com.owncloud.android.lib.resources.files.ReadFileRemoteOperation;
 import com.owncloud.android.lib.resources.files.model.RemoteFile;
 import com.owncloud.android.lib.resources.shares.OCShare;
 import com.owncloud.android.lib.resources.shares.ShareType;
+import com.owncloud.android.lib.resources.shares.ShareeUser;
 import com.owncloud.android.operations.RefreshFolderOperation;
 import com.owncloud.android.operations.RemoteOperationFailedException;
 import com.owncloud.android.services.OperationsService;
@@ -375,20 +376,25 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                     int size = 60 * (shareeSize - 1) + w;
 
                     for (int i = 0; i < shareeSize; i++) {
-                        String sharee = file.getSharees().get(i);
+                        ShareeUser sharee = file.getSharees().get(i);
 
                         ImageView avatar = new ImageView(mContext);
 
                         if (i == 0 && sharees.size() > 3) {
                             avatar.setImageResource(R.drawable.ic_people);
                         } else {
-                            if (sharee.contains("@")) {
-                                showFederatedShareAvatar(sharee, avatarRadius, resources, avatar);
+                            if (sharee.getUserId().contains("@")) {
+                                showFederatedShareAvatar(sharee.getUserId(), avatarRadius, resources, avatar);
                             } else {
                                 avatar.setTag(sharee);
-                                DisplayUtils.setAvatar(account, sharee, this, avatarRadius, resources,
-                                                       avatar, mContext);
-                                Log_OC.d(TAG, "avatar: " + sharee);
+                                DisplayUtils.setAvatar(account,
+                                                       sharee.getUserId(),
+                                                       sharee.getDisplayName(),
+                                                       this,
+                                                       avatarRadius,
+                                                       resources,
+                                                       avatar,
+                                                       mContext);
                             }
                         }
 
