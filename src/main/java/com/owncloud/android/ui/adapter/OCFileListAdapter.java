@@ -159,7 +159,6 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             AccountManager platformAccountManager = AccountManager.get(mContext);
             userId = platformAccountManager.getUserData(account,
                                                 com.owncloud.android.lib.common.accounts.AccountUtils.Constants.KEY_USER_ID);
-            showShareAvatar = mStorageManager.getCapability(account.name).getVersion().isShareesOnDavSupported();
         } else {
             userId = "";
         }
@@ -689,6 +688,7 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         if (updatedStorageManager != null && !updatedStorageManager.equals(mStorageManager)) {
             mStorageManager = updatedStorageManager;
+            showShareAvatar = mStorageManager.getCapability(account.name).getVersion().isShareesOnDavSupported();
             this.account = account;
         }
         if (mStorageManager != null) {
@@ -720,6 +720,7 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                         FileDataStorageManager storageManager, OCFile folder) {
         if (storageManager != null && mStorageManager == null) {
             mStorageManager = storageManager;
+            showShareAvatar = mStorageManager.getCapability(account.name).getVersion().isShareesOnDavSupported();
         }
         mFiles.clear();
 
