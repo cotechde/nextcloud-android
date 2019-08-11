@@ -202,7 +202,6 @@
     <string name="list_layout">Bố cục được liệt kê</string>
     <string name="local_file_list_empty">Không có tệp nào trong thư mục này.</string>
     <string name="local_folder_list_empty">Không có thư mục nào khác.</string>
-    <string name="log_progress_dialog_text">Đang tải dữ liệu…</string>
     <string name="log_send_mail_subject">%1$s nhật ký ứng dụng Android</string>
     <string name="login">Đăng nhập</string>
     <string name="manage_space_clear_data">Xóa dữ liệu</string>
@@ -272,7 +271,7 @@
     <string name="prefs_lock_none">Không có</string>
     <string name="prefs_lock_using_device_credentials">Chứng nhận thiết bị</string>
     <string name="prefs_lock_using_passcode">Mật mã</string>
-    <string name="prefs_log_delete_history_button">Xóa lịch sử</string>
+    <string name="logs_menu_delete">Xóa lịch sử</string>
     <string name="prefs_manage_accounts">Quản lý tài khoản</string>
     <string name="prefs_recommend">Giới thiệu cho bạn bè</string>
     <string name="prefs_show_hidden_files">Hiển thị các tệp ẩn</string>

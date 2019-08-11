@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Maak een backup van de contacten</string>
     <string name="actionbar_contacts_restore">Herstellen contactpersonen</string>
     <string name="actionbar_copy">Kopiëren</string>
-    <string name="actionbar_logger">Logs</string>
+    <string name="logs_title">Logs</string>
     <string name="actionbar_mkdir">Nieuwe map</string>
     <string name="actionbar_move">Verplaatsen</string>
     <string name="actionbar_open_as_richdocument_parameter">Openen met %1$s</string>
@@ -340,8 +340,7 @@
     <string name="local_file_list_empty">Er staan geen bestanden in deze map.</string>
     <string name="local_file_not_found_message">Het bestand is niet te vinden binnen het lokale bestandssysteem.</string>
     <string name="local_folder_list_empty">Er zijn niet meer mappen.</string>
-    <string name="log_progress_dialog_text">Gegevens laden…</string>
-    <string name="log_send_history_button">Geschiedenis versturen</string>
+    <string name="logs_menu_send">Geschiedenis versturen</string>
     <string name="log_send_mail_subject">%1$s-Android-app-logs</string>
     <string name="log_send_no_mail_app">Geen applicatie gevonden voor het versturen van de logs. Installeer een email client.</string>
     <string name="login">Inloggen</string>
@@ -487,7 +486,7 @@
     <string name="prefs_lock_title">Bescherm app met</string>
     <string name="prefs_lock_using_device_credentials">Toestelgegevens</string>
     <string name="prefs_lock_using_passcode">Toegangscode</string>
-    <string name="prefs_log_delete_history_button">Verwijder geschiedenis</string>
+    <string name="logs_menu_delete">Verwijder geschiedenis</string>
     <string name="prefs_manage_accounts">Accounts beheren</string>
     <string name="prefs_recommend">Aanbevelen bij vriend</string>
     <string name="prefs_show_hidden_files">Verborgen bestanden weergeven</string>

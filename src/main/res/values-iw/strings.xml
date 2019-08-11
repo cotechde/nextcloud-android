@@ -15,7 +15,7 @@
     <string name="actionbar_contacts">גיבוי אנשי קשר</string>
     <string name="actionbar_contacts_restore">שחזור אנשי קשר</string>
     <string name="actionbar_copy">העתק</string>
-    <string name="actionbar_logger">לוגים</string>
+    <string name="logs_title">לוגים</string>
     <string name="actionbar_mkdir">תיקייה חדשה</string>
     <string name="actionbar_move">העברה</string>
     <string name="actionbar_open_as_richdocument_parameter">פתיחה עם %1$s</string>
@@ -331,8 +331,7 @@
     <string name="local_file_list_empty">אין קבצים בתיקייה זו:</string>
     <string name="local_file_not_found_message">הקובץ לא נמצא במערכת הקבצים המקומית</string>
     <string name="local_folder_list_empty">אין תיקיות נוספות.</string>
-    <string name="log_progress_dialog_text">טעינת מידע…</string>
-    <string name="log_send_history_button">הסטורית שליחה</string>
+    <string name="logs_menu_send">הסטורית שליחה</string>
     <string name="log_send_mail_subject">%1$s לוגים של יישום אנדרואיד</string>
     <string name="log_send_no_mail_app">לא נמצא יישומון לשליחת רישומים. נא להתקין לקוח דוא״ל.</string>
     <string name="login">כניסה</string>
@@ -476,7 +475,7 @@
     <string name="prefs_lock_title">הגנה על היישומון באמצעות</string>
     <string name="prefs_lock_using_device_credentials">פרטי זיהוי להתקן</string>
     <string name="prefs_lock_using_passcode">צופן נעילה</string>
-    <string name="prefs_log_delete_history_button">מחיקת הסטוריה</string>
+    <string name="logs_menu_delete">מחיקת הסטוריה</string>
     <string name="prefs_manage_accounts">ניהול חשבונות</string>
     <string name="prefs_recommend">המליצו לחברים</string>
     <string name="prefs_show_hidden_files">הצגת קבצים נסתרים</string>

@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Copia de seguranza dos contactos</string>
     <string name="actionbar_contacts_restore">Restaurar os contactos</string>
     <string name="actionbar_copy">Copiar</string>
-    <string name="actionbar_logger">Rexistros</string>
+    <string name="logs_title">Rexistros</string>
     <string name="actionbar_mkdir">Novo cartafol</string>
     <string name="actionbar_move">Mover</string>
     <string name="actionbar_open_as_richdocument_parameter">Abrir con %1$s</string>
@@ -344,8 +344,7 @@
     <string name="local_file_list_empty">Non hai ficheiros neste cartafol.</string>
     <string name="local_file_not_found_message">Non se atopou o ficheiro no sistema local de ficheiros</string>
     <string name="local_folder_list_empty">Xa non hai máis cartafoles</string>
-    <string name="log_progress_dialog_text">Cargando datos…</string>
-    <string name="log_send_history_button">Enviar o historial</string>
+    <string name="logs_menu_send">Enviar o historial</string>
     <string name="log_send_mail_subject">Atoparonse %1$s aplicativos de rexistros para Android</string>
     <string name="log_send_no_mail_app">Non se atopou ningún aplicativo para o envío de rexistros. Instale un cliente de correo-e.</string>
     <string name="login">Acceder</string>
@@ -492,7 +491,7 @@
     <string name="prefs_lock_title">Protexer o apli empregando</string>
     <string name="prefs_lock_using_device_credentials">Credenciais do dispositivo</string>
     <string name="prefs_lock_using_passcode">Código de seguridade</string>
-    <string name="prefs_log_delete_history_button">Eliminar historial</string>
+    <string name="logs_menu_delete">Eliminar historial</string>
     <string name="prefs_manage_accounts">Xestionar contas</string>
     <string name="prefs_recommend">Recomendar a un amigo</string>
     <string name="prefs_show_hidden_files">Amosar ficheiros agochados</string>
