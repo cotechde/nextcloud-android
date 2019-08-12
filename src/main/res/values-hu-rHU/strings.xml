@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Névjegyek biztonsági mentése</string>
     <string name="actionbar_contacts_restore">Névjegyek visszaállítása</string>
     <string name="actionbar_copy">Másolás</string>
-    <string name="actionbar_logger">Naplók</string>
+    <string name="logs_title">Naplók</string>
     <string name="actionbar_mkdir">Új mappa</string>
     <string name="actionbar_move">Áthelyezés</string>
     <string name="actionbar_open_as_richdocument_parameter">Megnyitás ezzel %1$s</string>
@@ -336,8 +336,7 @@
     <string name="local_file_list_empty">Nincs fájl ebben a mappában.</string>
     <string name="local_file_not_found_message">A fájl nem található a helyi fájlrendszeren</string>
     <string name="local_folder_list_empty">Nincs több mappa.</string>
-    <string name="log_progress_dialog_text">Adatok betöltése…</string>
-    <string name="log_send_history_button">Előzmények elküldése</string>
+    <string name="logs_menu_send">Előzmények elküldése</string>
     <string name="log_send_mail_subject">%1$s androidos alkalmazás naplói</string>
     <string name="log_send_no_mail_app">Nincs alkalmazás a napló küldéshez. Telepítsen egy levelezőprogramot.</string>
     <string name="login">Bejelentkezés</string>
@@ -481,7 +480,7 @@
     <string name="prefs_lock_title">Az alkalmazás megvédése ezzel:</string>
     <string name="prefs_lock_using_device_credentials">Eszközhitelesítő-adatok</string>
     <string name="prefs_lock_using_passcode">Számkód</string>
-    <string name="prefs_log_delete_history_button">Előzmények törlése</string>
+    <string name="logs_menu_delete">Előzmények törlése</string>
     <string name="prefs_manage_accounts">Fiókok kezelése</string>
     <string name="prefs_recommend">Ajánlás egy barátnak</string>
     <string name="prefs_show_hidden_files">Rejtett fájlok megjelenítése</string>

@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Taka öryggisafrit af tengiliðum </string>
     <string name="actionbar_contacts_restore">Endurheimta tengiliði</string>
     <string name="actionbar_copy">Afrita</string>
-    <string name="actionbar_logger">Atvikaskrár</string>
+    <string name="logs_title">Atvikaskrár</string>
     <string name="actionbar_mkdir">Ný mappa</string>
     <string name="actionbar_move">Færa</string>
     <string name="actionbar_open_as_richdocument_parameter">Opna með %1$s</string>
@@ -337,8 +337,7 @@
     <string name="local_file_list_empty">Það eru engar skrár í þessari möppu.</string>
     <string name="local_file_not_found_message">Skrá fannst ekki á staðværu skráakerfi</string>
     <string name="local_folder_list_empty">Það eru engar fleiri möppur.</string>
-    <string name="log_progress_dialog_text">Hleð inn gögnum…</string>
-    <string name="log_send_history_button">Ferill sendinga</string>
+    <string name="logs_menu_send">Ferill sendinga</string>
     <string name="log_send_mail_subject">%1$s atvikaskrár Android-forrita</string>
     <string name="log_send_no_mail_app">Ekkert forrit fannst til að senda atvikaskrár. Settu upp tölvupóstforrit.</string>
     <string name="login">Skrá inn</string>
@@ -482,7 +481,7 @@
     <string name="prefs_lock_title">Verja forritið með</string>
     <string name="prefs_lock_using_device_credentials">Auðkenni tækis</string>
     <string name="prefs_lock_using_passcode">Lykilkóða</string>
-    <string name="prefs_log_delete_history_button">Eyða ferli</string>
+    <string name="logs_menu_delete">Eyða ferli</string>
     <string name="prefs_manage_accounts">Sýsla með notandaaðganga</string>
     <string name="prefs_recommend">Mæla með við vin</string>
     <string name="prefs_show_hidden_files">Sýna faldar skrár</string>

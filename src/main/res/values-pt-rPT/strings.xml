@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Fazer cópia de segurança dos contactos</string>
     <string name="actionbar_contacts_restore">Restaurar contactos</string>
     <string name="actionbar_copy">Copiar</string>
-    <string name="actionbar_logger">Registos de Alterações</string>
+    <string name="logs_title">Registos de Alterações</string>
     <string name="actionbar_mkdir">Nova pasta</string>
     <string name="actionbar_move">Mover</string>
     <string name="actionbar_open_as_richdocument_parameter">Abrir com %1$s</string>
@@ -337,8 +337,7 @@
     <string name="local_file_list_empty">Não existem ficheiros nesta pasta.</string>
     <string name="local_file_not_found_message">Ficheiros não encontrados no sistema de ficheiros local</string>
     <string name="local_folder_list_empty">Não existem mais pastas.</string>
-    <string name="log_progress_dialog_text">A carregar dados…</string>
-    <string name="log_send_history_button">Histórico de envio</string>
+    <string name="logs_menu_send">Histórico de envio</string>
     <string name="log_send_mail_subject">%1$s registos de aplicação Android</string>
     <string name="log_send_no_mail_app">Nenhuma aplicação de envio de registos encontrada. Por favor, instale um cliente e-mail.</string>
     <string name="login">Iniciar Sessão</string>
@@ -484,7 +483,7 @@
     <string name="prefs_lock_title">Proteger a aplicação, usando</string>
     <string name="prefs_lock_using_device_credentials">Credenciais de dispositivo</string>
     <string name="prefs_lock_using_passcode">Código</string>
-    <string name="prefs_log_delete_history_button">Eliminar histórico</string>
+    <string name="logs_menu_delete">Eliminar histórico</string>
     <string name="prefs_manage_accounts">Gerir contas</string>
     <string name="prefs_recommend">Recomendar a um amigo</string>
     <string name="prefs_show_hidden_files">Mostrar ficheiros ocultados</string>

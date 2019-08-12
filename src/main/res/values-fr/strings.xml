@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Sauvegarde des contacts</string>
     <string name="actionbar_contacts_restore">Restaurer les contacts</string>
     <string name="actionbar_copy">Copier</string>
-    <string name="actionbar_logger">Journaux</string>
+    <string name="logs_title">Journaux</string>
     <string name="actionbar_mkdir">Nouveau dossier</string>
     <string name="actionbar_move">Déplacer</string>
     <string name="actionbar_open_as_richdocument_parameter">Ouvrir avec %1$s</string>
@@ -345,8 +345,7 @@ Attention la suppression est irréversible.</string>
     <string name="local_file_list_empty">Aucun fichier n\'est présent dans ce dossier.</string>
     <string name="local_file_not_found_message">Le fichier n\'a pas été trouvé sur le système de fichier local</string>
     <string name="local_folder_list_empty">Il n\'y a pas d\'autres dossiers.</string>
-    <string name="log_progress_dialog_text">Chargement des données…</string>
-    <string name="log_send_history_button">Envoyer le journal</string>
+    <string name="logs_menu_send">Envoyer le journal</string>
     <string name="log_send_mail_subject">Journaux de l\'application Android %1$s</string>
     <string name="log_send_no_mail_app">Aucune application n\'a été trouvée pour envoyer les journaux. Merci d\'installer une application de messagerie.</string>
     <string name="login">Se connecter</string>
@@ -492,7 +491,7 @@ Attention la suppression est irréversible.</string>
     <string name="prefs_lock_title">Verrouillage utilisé : </string>
     <string name="prefs_lock_using_device_credentials">Informations d\'identification du terminal</string>
     <string name="prefs_lock_using_passcode">Code de sécurité</string>
-    <string name="prefs_log_delete_history_button">Effacer le journal</string>
+    <string name="logs_menu_delete">Effacer le journal</string>
     <string name="prefs_manage_accounts">Gestion des comptes</string>
     <string name="prefs_recommend">Recommander à un ami</string>
     <string name="prefs_show_hidden_files">Afficher les fichiers masqués</string>

@@ -15,7 +15,7 @@
     <string name="actionbar_contacts">Savkopii kontaktaron</string>
     <string name="actionbar_contacts_restore">Restaŭri kontaktaron</string>
     <string name="actionbar_copy">Kopii</string>
-    <string name="actionbar_logger">Protokoloj</string>
+    <string name="logs_title">Protokoloj</string>
     <string name="actionbar_mkdir">Nova dosierujo</string>
     <string name="actionbar_move">Movi</string>
     <string name="actionbar_open_with">Malfermi per</string>
@@ -328,8 +328,7 @@
     <string name="local_file_list_empty">Estas neniu dosiero en ĉi tiu dosierujo.</string>
     <string name="local_file_not_found_message">Dosiero ne trovita en loka dosiersistemo</string>
     <string name="local_folder_list_empty">Ne estas plia dosierujo.</string>
-    <string name="log_progress_dialog_text">Ŝargante datumojn...</string>
-    <string name="log_send_history_button">Sendi historion</string>
+    <string name="logs_menu_send">Sendi historion</string>
     <string name="log_send_mail_subject">Protokoloj de Android-aplikaĵo %1$s</string>
     <string name="log_send_no_mail_app">Neniu aplikaĵo troveblis por sendi protokolojn. Bonvolu instali retpoŝtilon.</string>
     <string name="login">Ensaluti</string>
@@ -473,7 +472,7 @@
     <string name="prefs_lock_title">Protekti la aplikaĵon per</string>
     <string name="prefs_lock_using_device_credentials">Aparataj akreditiloj</string>
     <string name="prefs_lock_using_passcode">Pasvorto</string>
-    <string name="prefs_log_delete_history_button">Forviŝi historion</string>
+    <string name="logs_menu_delete">Forviŝi historion</string>
     <string name="prefs_manage_accounts">Administri kontojn</string>
     <string name="prefs_recommend">Rekomendi al amiko</string>
     <string name="prefs_show_hidden_files">Montri kaŝitajn dosierojn</string>

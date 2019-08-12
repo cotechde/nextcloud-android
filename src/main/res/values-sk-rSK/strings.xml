@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Zálohovanie kontaktov</string>
     <string name="actionbar_contacts_restore">Obnoviť kontakty</string>
     <string name="actionbar_copy">Kopírovať</string>
-    <string name="actionbar_logger">Logy</string>
+    <string name="logs_title">Logy</string>
     <string name="actionbar_mkdir">Nový priečinok</string>
     <string name="actionbar_move">Presunúť</string>
     <string name="actionbar_open_as_richdocument_parameter">Otvoriť pomocou %1$s</string>
@@ -336,8 +336,7 @@
     <string name="local_file_list_empty">V tomto priečinku nie sú žiadne súbory.</string>
     <string name="local_file_not_found_message">Súbor nebolo možné nájsť na lokálnom úložisku</string>
     <string name="local_folder_list_empty">Neexistujú ďalšie priečinky.</string>
-    <string name="log_progress_dialog_text">Načítavam…</string>
-    <string name="log_send_history_button">Odoslať históriu</string>
+    <string name="logs_menu_send">Odoslať históriu</string>
     <string name="log_send_mail_subject">%1$s Android app logs</string>
     <string name="log_send_no_mail_app">Aplikácia na odoslanie logov nenájdená. Prosím nainštalujte emailovú aplikáciu.</string>
     <string name="login">Prihlásiť sa</string>
@@ -481,7 +480,7 @@
     <string name="prefs_lock_title">Ochrániť apku pomocou</string>
     <string name="prefs_lock_using_device_credentials">Prihlasovacie údaje zariadenia</string>
     <string name="prefs_lock_using_passcode">Heslo</string>
-    <string name="prefs_log_delete_history_button">Vymazať históriu</string>
+    <string name="logs_menu_delete">Vymazať históriu</string>
     <string name="prefs_manage_accounts">Spravovať účty</string>
     <string name="prefs_recommend">Odporučiť priateľom</string>
     <string name="prefs_show_hidden_files">Zobraziť skryté súbory</string>

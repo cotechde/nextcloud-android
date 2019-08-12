@@ -16,7 +16,7 @@
     <string name="actionbar_contacts">Zrób kopię kontaktów</string>
     <string name="actionbar_contacts_restore">Przywróć kontakty</string>
     <string name="actionbar_copy">Kopiuj</string>
-    <string name="actionbar_logger">Logi</string>
+    <string name="logs_title">Logi</string>
     <string name="actionbar_mkdir">Nowy katalog</string>
     <string name="actionbar_move">Przenieś</string>
     <string name="actionbar_open_as_richdocument_parameter">Otwórz za pomocą %1$s</string>
@@ -344,8 +344,7 @@
     <string name="local_file_list_empty">Nie ma plików w tym katalogu.</string>
     <string name="local_file_not_found_message">Plik nie został znaleziony w lokalnym systemie plików</string>
     <string name="local_folder_list_empty">Nie ma kolejnych katalogów.</string>
-    <string name="log_progress_dialog_text">Ładowanie danych…</string>
-    <string name="log_send_history_button">Wyślij historię</string>
+    <string name="logs_menu_send">Wyślij historię</string>
     <string name="log_send_mail_subject">%1$s logi aplikacji Android</string>
     <string name="log_send_no_mail_app">Brak aplikacji do wysyłania logów. Zainstaluj klienta poczty e-mail.</string>
     <string name="login">Zaloguj</string>
@@ -491,7 +490,7 @@
     <string name="prefs_lock_title">Chroń aplikację za pomocą</string>
     <string name="prefs_lock_using_device_credentials">Poświadczenia urządzenia</string>
     <string name="prefs_lock_using_passcode">Kod PIN</string>
-    <string name="prefs_log_delete_history_button">Wyczyść historię</string>
+    <string name="logs_menu_delete">Wyczyść historię</string>
     <string name="prefs_manage_accounts">Zarządzaj kontami</string>
     <string name="prefs_recommend">Poleć znajomemu</string>
     <string name="prefs_show_hidden_files">Pokaż ukryte pliki</string>
