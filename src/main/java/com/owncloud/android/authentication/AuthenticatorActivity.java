@@ -128,19 +128,26 @@ import com.owncloud.android.utils.DisplayUtils;
 import com.owncloud.android.utils.ErrorMessageAdapter;
 import com.owncloud.android.utils.PermissionUtil;
 
+import org.conscrypt.Conscrypt;
+
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.net.URLDecoder;
+import java.security.NoSuchAlgorithmException;
+import java.security.Security;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
 import javax.inject.Inject;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLEngine;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -277,6 +284,18 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
         boolean directLogin = data != null && data.toString().startsWith(getString(R.string.login_data_own_scheme));
         if (savedInstanceState == null && !directLogin) {
             onboarding.launchFirstRunIfNeeded(this);
+        }
+
+        Security.insertProviderAt(Conscrypt.newProvider(), 1);
+
+        try {
+            Conscrypt.Version version = Conscrypt.version();
+            Log_OC.i(TAG, "Using Conscrypt/" + version.major() + "." + version.minor() + "." + version.patch() + " for TLS");
+            SSLEngine engine = SSLContext.getDefault().createSSLEngine();
+            Log_OC.i(TAG, "Enabled protocols: " + Arrays.toString(engine.getEnabledProtocols()) + " }");
+            Log_OC.i(TAG, "Enabled ciphers: " + Arrays.toString(engine.getEnabledCipherSuites()) + " }");
+        } catch (NoSuchAlgorithmException e) {
+            Log_OC.e(TAG, e.getMessage());
         }
 
         // delete cookies for webView
