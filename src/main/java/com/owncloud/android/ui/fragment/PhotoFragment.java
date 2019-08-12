@@ -46,7 +46,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * FileDisplayActivity
  */
 public class PhotoFragment extends OCFileListFragment {
-    private RecyclerView.OnScrollListener onScrollChangeListener;
+    private static final int MAX_ITEMS_PER_ROW = 10;
     private boolean photoSearchQueryRunning = false;
     private boolean photoSearchNoNew = false;
     private SearchRemoteOperation searchRemoteOperation;
@@ -63,28 +63,12 @@ public class PhotoFragment extends OCFileListFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = super.onCreateView(inflater, container, savedInstanceState);
 
-        onScrollChangeListener = new RecyclerView.OnScrollListener() {
+        getRecyclerView().addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(@NotNull RecyclerView recyclerView, int dx, int dy) {
-                if (recyclerView.getLayoutManager() instanceof GridLayoutManager) {
-                    GridLayoutManager gridLayoutManager = (GridLayoutManager) recyclerView.getLayoutManager();
-
-                    // scroll down
-                    if (dy > 0 && !photoSearchQueryRunning) {
-                        int visibleItemCount = gridLayoutManager.getChildCount();
-                        int totalItemCount = gridLayoutManager.getItemCount();
-                        int firstVisibleItem = gridLayoutManager.findFirstCompletelyVisibleItemPosition();
-
-                        if ((totalItemCount - visibleItemCount) <= (firstVisibleItem + 5)) {
-                            // Almost reached the end, continue to load new photos
-                            if ((totalItemCount - visibleItemCount) > 0) {
-                                searchAndDisplay();
-                            }
-                        }
-                    }
-                }
+                loadMoreWhenEndReached(recyclerView, dy);
             }
-        };
+        });
 
         Log_OC.i(this, "onCreateView() in PhotoFragment end");
         return v;
@@ -150,8 +134,6 @@ public class PhotoFragment extends OCFileListFragment {
         }
 
         searchAndDisplay();
-
-        getRecyclerView().setOnScrollListener(onScrollChangeListener);
     }
 
     private void searchAndDisplay() {
@@ -169,17 +151,32 @@ public class PhotoFragment extends OCFileListFragment {
         photoSearchQueryRunning = bool;
     }
 
-    /**
-     * Used to indicate that a paginated search was done, but did not result in new results
-     *
-     * @param bool true if search ran, but no new photos were retrieved; then no new search will be started
-     */
-    public void setPhotoSearchNoNew(boolean bool) {
-        photoSearchNoNew = bool;
+    public void setSearchDidNotFindNewPhotos(boolean noNewPhotos) {
+        photoSearchNoNew = noNewPhotos;
     }
 
     @Override
     public boolean isLoading() {
         return !photoSearchNoNew;
+    }
+
+    private void loadMoreWhenEndReached(@NonNull RecyclerView recyclerView, int dy) {
+        if (recyclerView.getLayoutManager() instanceof GridLayoutManager) {
+            GridLayoutManager gridLayoutManager = (GridLayoutManager) recyclerView.getLayoutManager();
+
+            // scroll down
+            if (dy > 0 && !photoSearchQueryRunning) {
+                int visibleItemCount = gridLayoutManager.getChildCount();
+                int totalItemCount = gridLayoutManager.getItemCount();
+                int firstVisibleItem = gridLayoutManager.findFirstCompletelyVisibleItemPosition();
+
+                if ((totalItemCount - visibleItemCount) <= (firstVisibleItem + MAX_ITEMS_PER_ROW)) {
+                    // Almost reached the end, continue to load new photos
+                    if ((totalItemCount - visibleItemCount) > 0) {
+                        searchAndDisplay();
+                    }
+                }
+            }
+        }
     }
 }
